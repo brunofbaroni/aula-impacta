@@ -7,14 +7,12 @@
     background-color: blue;
 }
 
-.menu {
+.menu ul {
     background-color: blueviolet;
+    display: flex;
+    justify-content: space-around;
 }
 
 .botao {
     background-color: aqua;
-}
-
-li {
-    justify-content: space-around;
 }
