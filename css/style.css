@@ -1,0 +1,20 @@
+.header {
+    display: flex ;
+    justify-content: space-around;
+}
+
+.logo {
+    background-color: blue;
+}
+
+.menu {
+    background-color: blueviolet;
+}
+
+.botao {
+    background-color: aqua;
+}
+
+li {
+    justify-content: space-around;
+}
