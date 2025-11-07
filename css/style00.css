@@ -1,0 +1,47 @@
+* {
+margin: 0;
+box-sizing: border-box;
+  border: 0;
+}
+
+.header {
+    display: flex ;
+    justify-content: space-around;
+}
+
+.logo {
+    
+}
+
+.menu{
+align-items: center;
+}
+
+.menu-itens {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-green {
+    color: #ffffff; 
+    border: transparent;
+    background-color: #36B864;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer
+}
+
+.btn-green:hover {
+background-color: #2ba756;
+
+} 
+
+.item:hover {
+    background-color: aqua;
+}
+
+.item {
+    text-decoration: none;
+}
+

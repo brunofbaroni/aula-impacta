@@ -1,0 +1,12 @@
+:root {
+    /* Cores do projeto */
+    --cor-proclen-green-light: #36B864;
+    --cor-proclen-green-dark:#1a9344;
+    --cor-proclen-green-dark2: #111d15
+    --cor-proclen-white: #ffffff;
+    --cor-proclen-gray:#4D4D4D;
+    --cor-proclen-gray2:#666666;
+
+    /* Tamanho de fonte do projeto */
+    --font-size: 10px;
+}
