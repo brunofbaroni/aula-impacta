@@ -7,7 +7,7 @@ html {
 /* import font */
 @font-face {
     font-family: PlayfairDisplay;
-    src: url(../fonts/PlayfairDisplay-VariableFont_wght.ttf);
+    src: url(../fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf);
 }
 
 /* Reset configurações aplicadas pelo browser */
@@ -150,14 +150,52 @@ html {
 }
 
 .content-buttons > a {
-    display: block
+    display: block;
+    margin-left: 5px;
 }
 
 .content-buttons {
     display: flex;
-    width: 85%;
-    justify-content: space-between;
+    width: 80%;
+    justify-content: flex-start;
     padding: 38px 0 0;
+}
+
+.exercicio {
+    height: auto;
+    width: 80%;
+    margin: 0 auto;
+      display: flex;
+  align-items: center;
+  justify-content: space-between;    
+}
+
+
+/* LADO DIREITO IMAGENS */
+.exercicio-imagens {
+  width: 50%;
+  position: relative;
+  display: flex;
+  padding: 15px;
+  
+  }
+
+.img-1 {
+  width: 25%;
+  height: 50%;
+  display:flex;
+  position: relative;
+  z-index: 2;
+  margin-right: -80px;
+  margin-top: 140px
+}
+
+.img-2 {
+  width: 40%;
+  height: 40%;
+  display:flex;
+  position: relative;
+  z-index: 1;
 }
 
 
