@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+.pai {
+    width: 100%;
+    border: 1px solid #000;
+    height: 300px;
+    position: relative;
+    background-color: aqua;
+}
+.filha {
+    width: 100px;
+    height: 50px;
+    background-color: blue;
+    position: absolute;
+    left: 50%;
+    opacity: 1;
+    bottom: 0;
+    margin-left: -50px;
+    transition-property: height, backgroundcolor, opacity;
+    transition-duration: 1s, 1s;
+    animation-name: nome-identifica;
+}
+
+.filha:hover {
+    height: 80px;
+    cursor: pointer;
+    background-color: rgb(253, 0, 0);
+    opacity: 0.5;
+}
+
+@keyframes nome-identifica {
+    0% {
+
+    }
+    
+
+
+
+    </style>
+</head>
+<body>
+    <div class="pai">
+        <div class="filha"></div>
+
+    </div>
+</body>
+</html>

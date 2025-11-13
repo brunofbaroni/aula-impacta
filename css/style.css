@@ -19,6 +19,13 @@ html {
     font-size: 100%;
 }
 
+.clean-content {
+    border: #000000 1px solid;
+    width: 70%;
+    margin: auto;
+
+}
+
 .header {
     display: flex;
     justify-content: center;
@@ -196,6 +203,28 @@ html {
   display:flex;
   position: relative;
   z-index: 1;
+}
+
+.header-service{
+    display: flex;
+    font-size: 2rem ;
+    justify-content: space-between;
+}
+
+.header-service > div {
+    width: 40%;
+}
+
+.service-description {
+    background-color: aqua;
+    height: 10px;
+    font-size: 3rem;
+}
+
+@media screen and (max-width: 600px){
+    .menu {
+        display: none;
+    }
 }
 
 
