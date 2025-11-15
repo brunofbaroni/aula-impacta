@@ -1,39 +1,104 @@
+
+(function (calc) {
+    let interromper = true;
+    while(interromper) {
+        const imposto = 0.2;
+        const produtos = [
+            ['Sabão', 2.00], 
+            ['Leite', 5.00], 
+            ['Açucar', 5.50],
+        ];
+
+        const dados = [];
+        const mensagens = [
+            'codigo do produto',
+            'digite a quantidade',
+        ];
+
+        
+        for(let i = 0; i < mensagens.length; i++) {
+            let dado = prompt(mensagens[i]);
+            dados.push(dado);
+        }
+
+        const cod = Number(dados[0]);
+        const produtoSelecionado = produtos[cod - 1];
+
+            if (!produtoSelecionado) {
+            alert('produto não existe');
+            continue; 
+        }
+
+        const totalCompra = calc(Number(dados[1]), produtoSelecionado[1], imposto);
+
+        console.log(`Produto:  ${produtoSelecionado[0]}`);
+        console.log(`Valor Unitario: ${produtoSelecionado[1]}`);
+        console.log(`Total da compra: ${totalCompra}`);
+        console.log(`Imposto cobrado: 20%`);
+
+        interromper = confirm('Deseja continuar');
+    }
+
+})(calculoTotalCompra);
+
+
+function calculoTotalCompra(quantidade, valorProduto, imposto = null) {
+    const totalCompraSemImposto = quantidade * valorProduto;
+    if (imposto) {
+        const total = totalCompraSemImposto + totalCompraSemImposto * imposto;
+        return total;
+    }
+    return totalCompraSemImposto;
+}
+
+
+
+
+
+
+
+// let valor = 50;
+// console.log('Imprime 1: ', valor);
+
+// function soma(v,x) {
+//     let incremento = 1;
+//     valor = v + incremento
+// }
+
+// console.log('Imprime 2: ', valor);
+
+// function subtrair() {
+//     soma(100, 10);
+// }
+
+// subtrair()
+
+
+
 /*
-Nome do produto
-Quantidade
-Valor de uma unidade
-Nome Cliente
+ Desenvolva um sistema de compra onde o usuario digitará:
+    - nome do produto 
+    - Quantidade de produto que comprou
+    - valor de uma unidade
+    - nome do cliente
 
-Seu programa deverá calcular o total da compra e imprimir:
+    Seu programa deverá calcular o total da compra  e imprimir as informações da compra:
 
-Exemplo de Saida
-############
+    Exemplo de saida
+    ###############################
 
-Nome do Cliente: xxxxx
-Produto: xxxxx
-Valor Unitário: xxxxx
-Total da Compra: xxxxx
+    Produto: xxxxx
+    Valor Unitario: xxxx
+    Total da compra (com imposto): xxxxx
+    Imposto cobrado: 20%
 
-############
-Obrigado e Volte sempre
+    -------------------------------------
+    Obrigado e volte sempre.
 
+    var nomeCliente = prompt('digite seu nome');
+
+    Imposto sobre total da compra
+    Caucule um imposta de 20% sobre o total da compra
+
+    Formuala = totalCompra + totalCompra * 0.2
 */
-
-
-var nomeCliente = prompt('Nome');
-var produto = prompt('Produto');
-var quantidade = prompt('quantidade')
-var valorUn = prompt('Valor Unitário');
-var valorTotal = valorUn*quantidade
-
-console.log(`############
-
-Nome do Cliente: ${nomeCliente}
-Produto: ${produto}
-Valor Unitário: ${valorUn}
-Total da Compra: ${valorTotal}
-
-############`)
-
-
-

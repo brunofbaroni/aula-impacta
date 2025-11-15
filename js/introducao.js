@@ -88,6 +88,58 @@ resultado = notaAluno >= 7 ? 'Aprovado' : 'Reprovado'
 
 console.log(resultado)
 
+/* Estrutura Léxica */
+/* São conjuntos de regras específicas da linguagem JS
+- Case SeNsiTiVe - Palavras reservadas como if, else, for, while, etc.
+mas usando underline como _If, aí pode 
+nao use mais var para variavel, use let
+var sobrescreve, let não
+*/
+
+// LET para VARIAVEL
+let contratoAluguel = 'Fechado';
+contratoAluguel = 'Aberto';
+// a variavel pode mudar
+
+// Const para criação de constantes/
+const pi = 3.41;
+let circulo = 50 * pi;
+// O valor da constante nunca pode mudar/
+
+// Estrutura de Repetição - Laços
+
+// debugger; PARA ENCONTRAR BUGS
+
+for (let interacao = 0; interacao < 10; interacao++) {
+// console.log('looping')
+}
+
+//tambem pode usar o WHILE
+
+// let interacao = 0;
+
+// while(interacao < 10) {
+//   console.log('-----')
+//   console.log(interacao);
+
+//   interacao++;
+// }
+
+// Array
+
+// const salarios = [2000, 3000, 4000]
+// const dadosPessoais = ['Amelia', 54, 'Rua das Flores', salarios];
+
+// console.log(dadosPessoais[3] [2]); //imprimi o dado 3 salario mas só o dado 2 dentro dele (conta o 0)
+// console.log(dadosPessoais.length); 
+
+const dadosPessoais = [4000, 5000, 8552, 5888, 6200, 4000]
+for(let interacao = 0; interacao < dadosPessoais.lenght; interacao++) {
+  
+}
+
+
+
 
 
 
