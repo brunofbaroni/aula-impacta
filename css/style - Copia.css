@@ -20,8 +20,8 @@ html {
 }
 
 .clean-content {
-    /* border: #000000 1px solid; */
-    width: 100%;
+    border: #000000 1px solid;
+    width: 70%;
     margin: auto;
 
 }
@@ -132,15 +132,14 @@ html {
 
 /* Formatação da Main */
 .main-clean {
+    height: auto;
     background-image: url(../img/hero-iamge.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    /* width: 80%; */
+    background-color: blueviolet;
+    width: 80%;
     margin: 0 auto;
-    /* padding: 80px 30px; */
+    background-size: cover;
 }
-
 
 .content-main {
     width: 50%;
@@ -217,11 +216,16 @@ html {
 }
 
 .service-description {
+    background-color: aqua;
     height: 10px;
     font-size: 3rem;
 }
 
-
+@media screen and (max-width: 600px){
+    .menu {
+        display: none;
+    }
+}
 
 
 /* header {
